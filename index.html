@@ -1,32 +1,78 @@
 <html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <title>Kişisel Web Sayfası</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/font-awesome.css" />
+
+    <script> 
+    
+        $(document).ready(function(){
+          $("#menu-icon").click(function(){
+            $("#menuItems2").slideToggle("slow");
+          });
+        });
+
+        </script>
+
+<style> 
+    #panel, #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #e5eecc;
+      border: solid 1px #c3c3c3;
+    }
+    
+    #panel {
+      padding: 50px;
+      display: none;
+    }
+    </style>
 
 
 </head>
 
 <body>
-    <header id="header">
+    <header id="header" " >
         <div class="header">
             <div class="container">
-                <div class="header-navbar">
-                    <div class="header-logo"> 
+                <div class="header-navbar" >
+                    <div class="header-logo" > 
                         <h2>MERVAN AYKUT</h2>
                     </div>
-                    <div class="header-menu"> 
-                    <ul>
+
+
+                    <div class="header-menu" >
+                    <ul id="menuItems2">
+                        
                         <li><a href="#" class="active">Home</a></li>
                         <li><a href="#ABOUT">About</a></li>
                         <li><a href="#HOBBİES">Hobies</a></li>
-                        <li><a href="#DİSCOVER">Discover</a></li>
+                        <li><a href="#WORKS">Works</a></li>
                         <li><a href="#CONTACT">Contact</a></li>
+
+                    
+                        
                     </ul>
-                   
+
+
+
+                    <div class="contact-item2" id="menu-icon" onclick="menuToggle()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+                    </div>
+                    
+
+                    
                     </div>
                 </div>
                 <div class="header-text">
@@ -40,7 +86,7 @@
     </header>
    
     <section id="about">
-        <div class="about">
+        <div class="about"">
             <div class="container"> 
                 <div class="about-tittle">
                     <a name="ABOUT"></a>
@@ -48,6 +94,7 @@
                     
                     
             </div>
+
             <div class="about-content">
                 <div class="about-img">
                     <img src="about.png" alt="">
@@ -59,8 +106,7 @@
 
                     </div> 
                 </div>
-            </div>
-        </div>
+       
     </section> 
 
     <section id="portfolio">
@@ -69,64 +115,146 @@
                 <div class="about-tittle">
                     <a name="HOBBİES"></a>
                     <h2>HOBBİES</h2>
-                        </div>
-                    </div> 
+                    
+                        
+                        
+</head>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 8</div>
+          <img src="01.jpg" style="width:100%">
+          <div class="text"> Yüzmek</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 8</div>
+            <img src="03.jpg" style="width:100%">
+            <div class="text">Satranç</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 8</div>
+            <img src="02.jpg" style="width:100%">
+            <div class="text">Gitar</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 8</div>
+            <img src="04.jpg" style="width:100%">
+            <div class="text">Origami</div>
+          </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 8</div>
+          <img src="05.jpg" style="width:100%">
+          <div class="text">Tatil</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 8</div>
+          <img src="06.jpg" style="width:100%">
+          <div class="text">Yazılım</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 8</div>
+            <img src="07.jpg" style="width:100%">
+            <div class="text">Fotoğraf</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 8</div>
+            <img src="08.jpg" style="width:100%">
+            <div class="text">Konser</div>
+          </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+                    
+
                 </div>
             </div>
         </div>
     </section> 
-
-     <section id="portfolio">
-         <div class="portfolio">
-        
-
-            <div class="portfolio-item">
-                <img src="01.jpg" alt="">
-            </div>
-            <div class="portfolio-item">
-                <img src="02.jpg" alt="">
-            </div>
-            <div class="portfolio-item">
-                <img src="03.jpg" alt="">
-            </div>
-            <div class="portfolio-item">
-                <img src="04.jpg" alt="">
-            </div>
-            <div class="portfolio-item">
-                <img src="05.jpg" alt="">
-            </div>
-            <div class="portfolio-item">
-                <img src="06.jpg" alt="">
-            </div>
-            <div class="portfolio-item">
-                <img src="07.jpg" alt="">
-            </div>
-            <div class="portfolio-item">
-                <img src="08.jpg" alt="">
-            </div>
-
-        </div>
-
-    </section>
+    
+      
 
     <section id="about">
-        <div class="about">
+        <div class="about"  style="background-color: rgb(136, 90, 6);">
             <div class="container"> 
                 <div class="about-tittle">
                 
-                    <a name="DİSCOVER"></a>
-                    <h2>DİSCOVER</h2>
+                    <a name="WORKS"></a>
+                    <h2>WORKS</h2>
+                    <h3 style=text-align:center >Portfolyo</h3>
                 </div>
-            <div class="about-content">
-                <div class="about-img">
-                    <img src="ödev4.jpg" alt="">
-                </div>
-                <div class="about-text">
-                    <h4>Our Story</h4>
-                  <p>Gelişen teknolojiyle birlikte yazılım alanında birçok yönden iş karşımıza çıkar.Bu işleri yapabilmek yazılım alanında çalışan kişilerin kendilerini hangi ölçüde geliştirdikleriyle orantılıdır.Bu yüzden Microsoft,Symantec gibi büyük yazılım şirketlerinde çalışmak ya da böyle şirketler kurmak benim gibi çoğu yazılımcının hayali.Bunun için şimdiden çalışmak gerekir.. </p>
-
+                <div class="about-content2">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:95%">
+                        <p>C DİLİ=%95</p>
+                      </div>
                     </div>
-                </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                            <p>JAVA DİLİ=%85</p>
+                        </div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                            <p>HTML=%90</p>
+                        </div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                            <p>CSS=%80</p>
+                        </div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                          <p>JAVASCRİPT DİLİ=%85</p>
+                        </div>
+                      </div>
+                     
+                      
+                      </div>
+                  </div>
             </div>
         </div>
     </section> 
@@ -141,7 +269,7 @@
                     <div class="contact-content">
                         <div class="contact-item">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>
-                            <p>0530 745 12 **</p>
+                            <p>0545 948 53 **</p>
                             <p>0212 430 12 **</p>
                         </div>
                         <div class="contact-item">
@@ -149,7 +277,7 @@
                             <p>Üniverste mahallesi bilen sokak no:29 Battalgazi/Malatya</p>
                         </div>
                         <div class="contact-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                            <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
                             <p>mervannaykut</p>
                         </div>
                     </div>
@@ -159,8 +287,37 @@
 
     </section>
 
+    
+    <script>
 
+        /*JQUEERY kullanılmazsa responsive menu için*/
+        /*
+        var menuItems2=document.getElementById('menuItems2');
+        menuItems2.style.maxHeight="0px";
+
+        function menuToggle(){
+            if(menuItems2.style.maxHeight=="0px"){
+                menuItems2.style.maxHeight="200px";
+            }
+            else{
+                menuItems2.style.maxHeight="0px"
+            }
+        }
+        */
+        
+
+    </script>
+    
    
 
+    
+
+    <a href="cv1058440098.pdf"><button class="button bir" >CV İndir</button></a>
+
+    
+
+
+
+    
 </body>
 </html>
